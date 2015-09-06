@@ -14,9 +14,9 @@
 <div class="social">
 	<div class="logo-lettering icon-a"></div>
 	<ul>
-		<li><a href="" class="icon-e"></a></li>
-		<li><a href="" class="icon-f"></a></li>
-		<li><a href="" class="icon-g"></a></li>
-		<li><a href="" class="icon-h"></a></li>
+		<li><a href="https://www.behance.net/BlueTerrierStudio" target="_blank" class="icon-e"></a></li>
+		<li><a href="https://www.facebook.com/blueterrier" target="_blank" class="icon-f"></a></li>
+		<li><a href="https://twitter.com/blueterrierstd" target="_blank" class="icon-g"></a></li>
+		<li><a href="https://instagram.com/blueterrier" target="_blank" class="icon-h"></a></li>
 	</ul>
 </div>
