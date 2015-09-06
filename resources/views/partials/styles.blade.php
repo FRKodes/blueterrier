@@ -1,0 +1,1 @@
+<link href="{{ elixir('css/all.css') }}" rel="stylesheet">
