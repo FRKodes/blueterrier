@@ -13,6 +13,8 @@
 
 Route::get('/', 'PagesController@index');
 
+Route::post('sendmail', 'PagesController@sendmail');
+
 // Route::get('home', 'HomeController@index');
 
 // Route::controllers([

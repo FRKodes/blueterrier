@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use Mail;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -8,7 +9,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller {
 
 	/**
-	 * Display a listing of the resource.
+	 * Display the homepage.
 	 *
 	 * @return Response
 	 */
@@ -17,68 +18,16 @@ class PagesController extends Controller {
 		return View('pages.home');
 	}
 
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
+	/*
+	 Sends an email.
 	 */
-	public function create()
+	public function sendmail()
 	{
-		//
-	}
-
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{
-		//
-	}
-
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
-
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
+		
+		Mail::send('emails.contacto', array('key' => 'value'), function($message)
+		{
+		    $message->to('frkalderon@gmail.com', 'Tony Montana')->subject('Email de contacto Blue Terrier.');
+		});
 	}
 
 }

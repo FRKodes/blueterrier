@@ -304,6 +304,7 @@ body .hello-block .arrow.icon-c {
 }
 body .form {
   padding-top: 50px;
+  position: relative;
 }
 body .form .form-group input.form-control {
   background-color: #f2f2f2;
@@ -359,6 +360,19 @@ body .form .btn.btn-primary {
   border-color: #4dc8e9;
   font-size: 1.2em;
   width: 100%;
+}
+body .form .sent_mail_alert {
+  background-color: #4dc8e9;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+  padding: 30px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
 }
 body .clients {
   background-color: #f2f2f2;
@@ -475,6 +489,10 @@ body .social ul li a:hover {
     font-size: 1.4em;
     padding: 10px 0;
   }
+  body .form .sent_mail_alert {
+    margin-left: -200px;
+    width: 400px;
+  }
   body .clients {
     padding-top: 10px;
   }
@@ -530,6 +548,11 @@ body .social ul li a:hover {
     font-size: 8em;
   }
   body .form {
+    width: 600px;
+  }
+  body .form .sent_mail_alert {
+    margin-left: 0;
+    left: 0;
     width: 600px;
   }
   body .clients {

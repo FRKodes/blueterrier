@@ -10,12 +10,13 @@
 	</div>
 
 	<div class="container form">
-		{!! Form::open(['id'=>'contactForm']) !!}
+		{!! Form::open(['url'=>'sendmail', 'id'=>'contactForm']) !!}
 			<div class="form-group select">{!! Form::select('motivo', [''=>'¿Qué estás buscando?', 'Diseño'=>'Diseño', 'Desarrollo Web'=>'Desarrollo Web', 'Marketing Digital'=>'Marketing Digital', 'Branding'=>'Branding'], 'selected', []) !!}</div>
 			<div class="form-group"> {!! Form::text('nombre', null, ['class'=>'form-control', 'data-validate'=>'required', 'placeholder'=>'Escribe tu nombre']) !!} </div>
 			<div class="form-group"> {!! Form::text('email', null, ['class'=>'form-control', 'data-validate'=>'required|email', 'placeholder'=>'Escribe tu correo']) !!} </div>
 			<div class="form-group"> {!! Form::textarea('comentario', null, ['placeholder'=>'Platícanos un poco de tu proyecto', 'data-validate'=>'required']) !!} </div>
 			<div class="submit-line"> {!! Form::submit('Enviar', ['class'=>'btn btn-primary'])!!} </div>
+			<div class="sent_mail_alert">¡Gracias! <br>Tu mensaje se envió con éxito, nos pondremos en contacto contigo muy pronto.</div>
 		{!! Form::close() !!}
 	</div>
 

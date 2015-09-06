@@ -42,6 +42,7 @@ body
 			position absolute
 	.form
 		padding-top 50px
+		position relative
 		.form-group
 			input.form-control
 				background-color gris
@@ -93,6 +94,18 @@ body
 			border-color azul
 			font-size 1.2em
 			width 100%
+		.sent_mail_alert
+			background-color azul
+			border-radius 4px
+			color white
+			display none
+			padding 30px
+			position absolute
+			text-align center
+			top 150px
+			left 50%
+			margin-left -150px
+			width 300px
 	.clients
 		background-color gris
 		margin 30px 0
@@ -184,6 +197,9 @@ body
 			.btn.btn-primary
 				font-size 1.4em
 				padding 10px 0
+			.sent_mail_alert
+				margin-left -200px
+				width 400px
 		.clients
 			padding-top 10px
 			h2
@@ -225,6 +241,10 @@ body
 					font-size 8em
 		.form
 			width 600px
+			.sent_mail_alert
+				margin-left 0
+				left 0
+				width 600px
 		.clients
 			width 100%
 			p

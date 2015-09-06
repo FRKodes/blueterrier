@@ -25,18 +25,16 @@ $(function(){
 		},
 		overallSuccess : function(){
 			var form    	= $('#contactForm'),
-				name		= form.find( "input[name='name']").val(),
+				nombre		= form.find( "input[name='nombre']").val(),
 				email		= form.find( "input[name='email']").val(),
-				tel			= form.find( "input[name='tel']").val(),
+				motivo		= form.find( "input[name='motivo']").val(),
 				_token		= form.find( "input[name='_token']").val(),
-				message		= form.find( "textarea[name='message']").val(),
+				comentario	= form.find( "textarea[name='comentario']").val(),
 				action		= form.attr( "action"),
 				url			= action;
 
-				// console.log(_token);
-
 			var posting = $.post(
-				url, { name: name, email: email, tel: tel, _token: _token, message: message }
+				url, { n: nombre, e: email, m: motivo, _token: _token, c: comentario }
 			);
 			posting.done(function( data ){
 				console.log('email sent!');
